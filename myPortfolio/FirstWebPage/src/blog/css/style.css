@@ -1,0 +1,36 @@
+h1 {
+    width:60%;
+    margin: 5% auto;
+}
+
+main {
+    width: 60%;
+    margin: 5% auto;
+    background: pink;
+}
+
+article {
+    margin: 1% auto;
+    border: 2px solid gray;
+    width: 60%;
+    background: white;
+}
+
+article > h3 {
+    font-size: 1em; 
+}
+
+article:hover {
+    background: gray;
+}
+
+article:hover.pufferfish {
+    background-image: url("startledpufferfish.jpg"); 
+}
+
+.has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: white;
+    padding: 20px;
+  }
