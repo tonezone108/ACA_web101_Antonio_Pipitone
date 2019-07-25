@@ -104,7 +104,7 @@ div.red-button{
 
 .container {
     display: grid;
-    
+    grid-row-gap: 10px;
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
     "myheader   myheader"
@@ -126,3 +126,10 @@ div.red-button{
     "gray-button gray-button gray-button red-button" */
     /* "gray-button gray-button gray-button red-button" ; */ 
 }
+
+.has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: white;
+    padding: 10px;
+  }
