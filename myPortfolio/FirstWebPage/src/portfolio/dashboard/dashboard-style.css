@@ -14,6 +14,9 @@ footer{
 }
 
 div.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 10px;
@@ -65,6 +68,7 @@ div.black-button{
     padding-left: 4px;
     padding-right: 4px;
     background: black;
+    width: 80px;
     /* grid-area: black-button; */
 }
 
@@ -75,34 +79,104 @@ div.gray-button{
     padding-left: 4px;
     padding-right: 4px;
     background: gray;
+    width: 80px;
     /* grid-area: gray-button; */
 }
 
-div.gray-button0{
+div.logo{
+    text-align: center;
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 80px;
+    height: 40px;
+    background: url(startledpufferfish.jpg);
+    background-repeat: no;
+    background-size: cover;
+    margin-left: 16px;
+    
+}
+
+div.gray-button1{
     text-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
     padding-right: 4px;
     background: gray;
-    /* grid-area: gray-button; */
-    grid-column: 1/3;
+    width: 65px;
+
+}
+
+div.gray-button0{
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: gray;
+    width: 180px;
+    margin-right: 16px;
+    
+
 }
 
 div.red-button{
+    
     text-align: center;
-    padding-top: 28px;
+    padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
     padding-right: 4px;
     background: red;
-    /* grid-area: red-button; */
-    grid-row: 5/7;
-    grid-column: 4/5;
+    width: 80px;
+
 }
 
 
-.container {
+
+
+.calculatorbody{
+    display:flex;
+    padding: 20px;
+    background: darkgray;
+    justify-content: center;
+}
+
+.calculator{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    grid-gap: 20px;
+}
+
+.flexblack {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.flexbottom {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+
+.has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: white;
+    padding: 10px;
+  }
+
+  .container {
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: 1fr 3fr;
@@ -113,23 +187,45 @@ div.red-button{
     "myfooter   myfooter";
 }
 
-.calculator{
-    display:grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-areas:
-    /* "calc-display calc-display calc-display calc-display"
-    /* "black-button black-button black-button black-button" 
-    "gray-button gray-button gray-button gray-button"
-    "gray-button gray-button gray-button gray-button"
-    "gray-button gray-button gray-button red-button" */
-    /* "gray-button gray-button gray-button red-button" ; */ 
-}
+  @media (min-width: 450px) {
+    .container {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "myheader"
+        "two" 
+        "one"
+        "three"
+        "myfooter";
+    }       
+    }
 
-.has-border {
-    border-radius: 25px;
-    border: 2px solid #0795C3;
-    background: white;
-    padding: 10px;
+    @media (min-width: 800px) {
+    .container {
+         display: grid;
+        grid-row-gap: 10px;
+        grid-template-columns: 2fr;
+        grid-template-areas:
+        "myheader myheader"
+        "two two"
+        "one three"    
+        "myfooter myfooter";
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .container {
+            display: grid;
+            grid-row-gap: 10px;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas:
+            "myheader   myheader"
+            "one        two"    
+            "three      three"
+            "myfooter   myfooter";
+        }
+        }
+
+
   }
