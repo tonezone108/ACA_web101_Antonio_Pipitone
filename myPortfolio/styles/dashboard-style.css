@@ -8,7 +8,7 @@ header {
 }
 
 footer{
-    background-image: url("sand.jpg");
+    background-image: url("../images/sand.jpg");
     background-size: 100% 100%;
     grid-area: myfooter;
 }
@@ -92,7 +92,7 @@ div.logo{
     padding-right: 4px;
     width: 80px;
     height: 40px;
-    background: url(startledpufferfish.jpg);
+    background: url(../images/startledpufferfish.jpg);
     background-repeat: no;
     background-size: cover;
     margin-left: 16px;
