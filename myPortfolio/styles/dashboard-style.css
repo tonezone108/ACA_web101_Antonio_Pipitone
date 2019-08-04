@@ -1,231 +1,216 @@
 body {
-    background: purple;
+  background: purple;
 }
 
 header {
-    background: yellow;
-    grid-area: myheader;
+  background: yellow;
+  grid-area: myheader;
 }
 
-footer{
-    background-image: url("../images/sand.jpg");
-    background-size: 100% 100%;
-    grid-area: myfooter;
+footer {
+  background-image: url("../images/sand.jpg");
+  background-size: 100% 100%;
+  grid-area: myfooter;
 }
 
-div.one{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background: green;
-    grid-area: one;
+div.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: green;
+  grid-area: one;
 }
 
-div.two{
-    font-family: 'Orbitron', sans-serif;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background: orange;
-    grid-area: two;
+div.two {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: orange;
+  grid-area: two;
 }
 
-div.three{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background:  white;
-    grid-area: three;
+div.three {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: white;
+  grid-area: three;
 }
 
 div.calc-display {
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    background: olive;
-    /* grid-area: calc-display; */
-    grid-column: 1/5
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: olive;
+  /* grid-area: calc-display; */
+  grid-column: 1/5;
 }
-div.black-button{
-    text-align: center;
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    background: black;
-    width: 80px;
-    /* grid-area: black-button; */
-}
-
-div.gray-button{
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    background: gray;
-    width: 80px;
-    /* grid-area: gray-button; */
+div.black-button {
+  text-align: center;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: black;
+  width: 80px;
+  /* grid-area: black-button; */
 }
 
-div.logo{
-    text-align: center;
-    color: black;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    width: 80px;
-    height: 40px;
-    background: url(../images/startledpufferfish.jpg);
-    background-repeat: no;
-    background-size: cover;
-    margin-left: 16px;
-    
+div.gray-button {
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: gray;
+  width: 80px;
+  /* grid-area: gray-button; */
 }
 
-div.gray-button1{
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    background: gray;
-    width: 65px;
-
+div.logo {
+  text-align: center;
+  color: black;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 80px;
+  height: 40px;
+  background: url(../images/startledpufferfish.jpg);
+  background-repeat: no;
+  background-size: cover;
+  margin-left: 16px;
 }
 
-div.gray-button0{
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 6px;
-    padding-right: 6px;
-    background: gray;
-    width: 180px;
-    margin-right: 16px;
-    
-
+div.gray-button1 {
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: gray;
+  width: 65px;
 }
 
-div.red-button{
-    
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    background: red;
-    width: 80px;
-
+div.gray-button0 {
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background: gray;
+  width: 180px;
+  margin-right: 16px;
 }
 
-
-
-
-.calculatorbody{
-    display:flex;
-    padding: 20px;
-    background: darkgray;
-    justify-content: center;
+div.red-button {
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: red;
+  width: 80px;
 }
 
-.calculator{
-    display:flex;
-    flex-direction: column;
-    width: 400px;
-    grid-gap: 20px;
+.calculatorbody {
+  display: flex;
+  padding: 20px;
+  background: darkgray;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  grid-gap: 20px;
 }
 
 .flexblack {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .flexbottom {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-
 .has-border {
-    border-radius: 25px;
-    border: 2px solid #0795C3;
-    background: white;
-    padding: 10px;
-  }
+  border-radius: 25px;
+  border: 2px solid #0795c3;
+  background: white;
+  padding: 10px;
+}
 
+.container {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "myheader   myheader"
+    "one        two"
+    "three      three"
+    "myfooter   myfooter";
+}
+
+@media (min-width: 450px) {
+  .container {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "myheader"
+      "two"
+      "one"
+      "three"
+      "myfooter";
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "myheader myheader"
+      "two two"
+      "one three"
+      "myfooter myfooter";
+  }
+}
+
+@media (min-width: 1000px) {
   .container {
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
-    "myheader   myheader"
-    "one        two"    
-    "three      three"
-    "myfooter   myfooter";
-}
-
-  @media (min-width: 450px) {
-    .container {
-        display: grid;
-        grid-row-gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "myheader"
-        "two" 
-        "one"
-        "three"
-        "myfooter";
-    }       
-    }
-
-    @media (min-width: 800px) {
-    .container {
-         display: grid;
-        grid-row-gap: 10px;
-        grid-template-columns: 2fr;
-        grid-template-areas:
-        "myheader myheader"
-        "two two"
-        "one three"    
-        "myfooter myfooter";
-        }
-    }
-
-    @media (min-width: 1000px) {
-        .container {
-            display: grid;
-            grid-row-gap: 10px;
-            grid-template-columns: 1fr 3fr;
-            grid-template-areas:
-            "myheader   myheader"
-            "one        two"    
-            "three      three"
-            "myfooter   myfooter";
-        }
-        }
-
-
+      "myheader   myheader"
+      "one        two"
+      "three      three"
+      "myfooter   myfooter";
   }
+}
