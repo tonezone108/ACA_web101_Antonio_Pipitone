@@ -1,0 +1,114 @@
+.has-border {
+  border-radius: 25px;
+  border: 2px solid #0795c3;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 18px;
+  text-align: center;
+}
+
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 15% auto;
+  grid-column: 2/3;
+}
+
+h1 {
+  color: blue;
+  margin: 3% auto;
+  border-bottom: 2px solid #1940a9;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/pinkwatercolor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  margin: 3% auto;
+  width: 70%;
+  height: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  background: transparent;
+  padding: 20px;
+  padding-bottom: 20px;
+  padding-bottom: 5%;
+  text-align: center;
+  color: blue;
+  letter-spacing: 16px;
+  font-style: italic;
+}
+
+section.buttons {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  grid-area: buttons;
+}
+
+section.face {
+  display: flex;
+  flex-direction: column;
+  grid-area: face;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "buttons face face face face";
+}
+
+.logo {
+  padding-top: 20px;
+  width: 150px;
+  height: 100px;
+  /* margin: 3% 10%; */
+}
+
+.small-text {
+  grid-column: 2/3;
+  color: black;
+  font-size: 10px;
+  margin: 3% auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "buttons"
+      "face";
+  }
+
+  section.buttons {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: buttons;
+  }
+
+  /* img.logo {
+    float: left;
+  } */
+}
