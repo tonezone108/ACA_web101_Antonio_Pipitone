@@ -1,0 +1,59 @@
+body {
+  background-color: #85cff7;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+form#newItemForm {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  grid-area: form;
+}
+
+textarea.thingtodo {
+  width: 375px;
+  height: 150px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+ul.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: list;
+}
+
+div.todolist {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "form"
+    "list";
+}
+
+li span {
+  border: 3px solid red;
+  text-align: center;
+  width: 25px;
+  border-radius: 50%;
+  float: right;
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  div.todolist {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "form list";
+  }
+}

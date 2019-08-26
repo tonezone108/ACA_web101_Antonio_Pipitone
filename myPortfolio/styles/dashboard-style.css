@@ -48,6 +48,20 @@ div.three {
   padding-right: 10px;
   background: white;
   grid-area: three;
+
+  overflow: hidden;
+  /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  /* padding-top: 56.25%; */
+  position: relative;
+}
+
+div.three iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
 }
 
 div.calc-display {

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ToDoList</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../styles/todolist.css" />
+    <script src="../js/todolist.js"></script>
+  </head>
+  <body>
+    <div class="todolist">
+      <form id="newItemForm">
+        <h1>TO DO LIST</h1>
+        <div>
+          Date:
+          <input type="text" name="date" value="" />
+          Time: <input type="text" name="time" value="" />
+        </div>
+        <textarea
+          class="thingtodo"
+          type="text"
+          id="itemField"
+          name="thingtodo"
+          placeholder="Thing to do"
+        >
+        </textarea>
+        <input type="submit" id="add" value="add" />
+      </form>
+      <ul class="list"></ul>
+    </div>
+  </body>
+</html>
