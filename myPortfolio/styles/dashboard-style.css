@@ -39,6 +39,12 @@ div.two {
   grid-area: two;
 }
 
+div.geolocation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 div.three {
   margin-top: 15px;
   margin-bottom: 15px;
